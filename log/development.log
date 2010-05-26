@@ -580,3 +580,69 @@ Rendering template within layouts/application
 Rendering users/new
 Rendered users/_form (4.7ms)
 Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-05-25 21:01:19) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (5.0ms)
+Completed in 64ms (View: 25, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-05-25 21:01:41) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (4.7ms)
+Completed in 21ms (View: 13, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-05-25 21:03:09) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (5.3ms)
+Completed in 20ms (View: 7, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-05-25 21:03:17) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 20ms (View: 8, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-05-25 21:06:46) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (undefined local variable or method `current_user' for #<ActionView::Base:0x10330bde0>) on line #14 of app/views/layouts/application.html.haml:
+11:   %body
+12:     #container
+13:       %div#user_nav
+14:         - if current_user
+15:           = link_to "Edit Profile", edit_user_path(:current)
+16:           |
+17:           = link_to "Logout", logout_path        
+
+    app/views/layouts/application.html.haml:14:in `_run_haml_app47views47layouts47application46html46haml'
+    haml (2.2.15) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.15) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.15) rails/./lib/sass/plugin/rails.rb:19:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-05-25 21:09:42) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 15ms (View: 5, DB: 0) | 200 OK [http://localhost/login]

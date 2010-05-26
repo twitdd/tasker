@@ -4,7 +4,7 @@ body {
   font-size: 14px; }
 
 a {
-  color: #00000F; }
+  color: #0000FF; }
   a img {
     border: none; }
 
@@ -61,3 +61,6 @@ a {
     #errorExplanation ul li {
       font-size: 12px;
       list-style: disc; }
+
+#user_nav {
+  float: right; }
