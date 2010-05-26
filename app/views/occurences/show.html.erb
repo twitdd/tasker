@@ -1,0 +1,13 @@
+<p>
+  <b>Task:</b>
+  <%=h @occurence.task %>
+</p>
+
+<p>
+  <b>Ice cube yaml:</b>
+  <%=h @occurence.ice_cube_yaml %>
+</p>
+
+
+<%= link_to 'Edit', edit_occurence_path(@occurence) %> |
+<%= link_to 'Back', occurences_path %>

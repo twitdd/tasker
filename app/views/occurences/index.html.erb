@@ -1,0 +1,22 @@
+<h1>Listing occurences</h1>
+
+<table>
+  <tr>
+    <th>Task</th>
+    <th>Ice cube yaml</th>
+  </tr>
+
+<% @occurences.each do |occurence| %>
+  <tr>
+    <td><%=h occurence.task %></td>
+    <td><%=h occurence.ice_cube_yaml %></td>
+    <td><%= link_to 'Show', occurence %></td>
+    <td><%= link_to 'Edit', edit_occurence_path(occurence) %></td>
+    <td><%= link_to 'Destroy', occurence, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New occurence', new_occurence_path %>
