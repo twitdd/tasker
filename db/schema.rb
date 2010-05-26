@@ -9,9 +9,9 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100526025759) do
+ActiveRecord::Schema.define(:version => 20100526032503) do
 
-  create_table "occurences", :force => true do |t|
+  create_table "occurrences", :force => true do |t|
     t.integer  "task_id"
     t.text     "ice_cube_yaml"
     t.datetime "created_at"

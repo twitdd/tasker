@@ -1,6 +1,6 @@
-class CreateOccurences < ActiveRecord::Migration
+class CreateOccurrences < ActiveRecord::Migration
   def self.up
-    create_table :occurences do |t|
+    create_table :occurrences do |t|
       t.references :task
       t.text :ice_cube_yaml
 
@@ -9,6 +9,6 @@ class CreateOccurences < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :occurences
+    drop_table :occurrences
   end
 end

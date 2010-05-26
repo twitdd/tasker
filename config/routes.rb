@@ -1,13 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :occurences
+  map.resources :occurrences
 
   map.resources :tasks
 
-  map.resources :tasks
 
-  map.resources :occurences
-
-  map.resources :tasks
 
   map.login "login", :controller => "user_sessions", :action => "new"
   map.logout "logout", :controller => "user_sessions", :action => "destroy"
